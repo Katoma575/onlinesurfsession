@@ -1,0 +1,26 @@
+// Place all the styles related to the movie controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-contents{
+    display:flex;
+}
+
+.article{
+    
+    margin-left:auto;
+    margin-right:auto;
+    overflow:scroll;
+    height: 100vh;
+}
+
+.movie_iframe{
+    display:block;
+    margin:auto;
+    overflow:scroll;
+}
+
+h3{
+    flex-direction:center;
+}
+
