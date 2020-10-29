@@ -1,8 +1,8 @@
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-10 mx-auto">
-      <table class="table table-hover">
+<div class="table-responsive">
+  <!--<div class="row">-->
+  <!--  <div class="col-10 mx-auto">-->
+      <table class="table">
         <thead class="thead-dark">
           <h3><新着順です！！></h3>
           <tr>
@@ -12,6 +12,7 @@
             <th scope="col">撮影場所</th>
             <th scope="col">コメント</th>
             <th scope="col"><i class="fas fa-heart"></i></th>
+            <th scope="col">削除(投稿者のみ可能)</th>
           </tr>
         </thead>
         <tbody>
@@ -35,10 +36,22 @@
                 <%= movie.favorites.count %>
                 <% end %>
               </td>
+              <td>
+                <% if user_signed_in? && current_user.id == movie.user_id %>
+                  <div class="more">
+                    <span><%= image_tag 'arrow_top.png' %></span>
+                      <ul class="more_list">
+                        <li>
+                          <%= link_to '削除', "/movies/#{movie.id}", method: :delete %>
+                        </li>
+                      </ul>
+                  </div>
+                <% end %>
+              </td>
             <tr>
           <% end %>
         </tbody>
       </table>
-    </div>
-  </div>
+  <!--  </div>-->
+  <!--</div>-->
 </div>
