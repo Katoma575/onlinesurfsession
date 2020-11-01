@@ -56,11 +56,10 @@ footer {
 
 @import "bootstrap";
 
-
-.photo{
-  display: flex;
-  align-items: center;
-  justify-content: center 
+.img-responsive{
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .txt {
