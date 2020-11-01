@@ -38,14 +38,9 @@
               </td>
               <td>
                 <% if user_signed_in? && current_user.id == movie.user_id %>
-                  <div class="more">
-                    <span><%= image_tag 'arrow_top.png' %></span>
-                      <ul class="more_list">
                         <li>
                           <%= link_to '削除', "/movies/#{movie.id}", method: :delete %>
                         </li>
-                      </ul>
-                  </div>
                 <% end %>
               </td>
             <tr>
