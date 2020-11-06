@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   
   root 'homes#index'
   
-  devise_for :users
+  devise_for :user, controllers: {
+    registrations: 'users/registrations'
+  }
+  
   devise_scope :user do
     post '/users/guest_sign_in', to: 'users/sessions#new_guest'
   end
@@ -11,7 +14,7 @@ Rails.application.routes.draw do
   get 'homes/how_to'=>'homes#how_to'
   get 'contacts/new'=>'contacts#new'
   
-  resource :users, except: [:new, :create,]
+  resource :user, except: [:new, :create,]
   resources :contacts, only: [:new, :create ]
   
   resources :movies do
