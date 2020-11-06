@@ -3,13 +3,15 @@ Rails.application.routes.draw do
   root 'homes#index'
   
   devise_for :users
-  post '/homes/guest_sign_in', to: 'homes#new_guest'
+  devise_scope :user do
+    post '/users/guest_sign_in', to: 'users/sessoins#new_guest'
+  end
   
   get 'homes/greeting'=>'homes#greeting'
   get 'homes/how_to'=>'homes#how_to'
   get 'contacts/new'=>'contacts#new'
   
-  resource :user, except: [:new, :create,]
+  resource :users, except: [:new, :create,]
   resources :contacts, only: [:new, :create ]
   
   resources :movies do
