@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root 'home#top'
+  root 'homes#index'
   
   devise_for :users, controllers: {
     registrations: 'users/registrations',
@@ -13,8 +13,6 @@ Rails.application.routes.draw do
     get 'users/guest_sign_in', to: 'users/sessions#new_guest'
   end
   
-
-  get '/users/sign_out' => 'devise/sessions#destroy'
   get 'homes/greeting'=>'homes#greeting'
   get 'homes/how_to'=>'homes#how_to'
   get 'contacts/new'=>'contacts#new'
