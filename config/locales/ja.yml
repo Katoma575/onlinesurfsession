@@ -1,0 +1,11 @@
+ja:
+    activerecords:
+        models:
+            movie:
+        attributes:
+            movie:
+                Datetime: 撮影日時
+                place: 開催場所
+                Video: YouTube URL 
+                name: ライダー
+                Self comment: コメント
