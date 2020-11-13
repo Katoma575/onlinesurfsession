@@ -1,34 +1,50 @@
-<div class="container">
-  <div class="item">
-    <h3>投稿方法</h3>
-      <h4>スマホからのアップ方法を記載します<h4>
-        <h5>YouTubeへの投稿</h5>  
-          <ol type="1">
-            <li>ご自身のライディングをスマホでどなたかor三脚にスマホを付けて撮影</li>
-            <li>スマホのYouTubeアプリを開き、画面右上のビデオカメラのボタンをタップ</li>
-            <li>撮影したアップロードする動画を選択（iphoneだと下部真ん中の”円十文字”をタップすると”動画のアップロード”がでます）</li>
-            <li>トリミング（不要部分削除）後、</li>
-            <li>タイトルや説明入れてアップロード！</li>
-          </ol>
-        
-        <h5>”なみのりくらべ”への投稿</h5>  
-          <ol type="1">
-            <li>スマホのYouTubuアプリから</li>
-            <li>右下のライブラリをクリック</li>
-            <li>自分の動画へ</li>
-            <li>投稿したい動画をクリック</li>
-            <li>動画の下にある共有矢印をクリック</li>
-            <li>コピーする</li>
-            <li>波のりくらべにログイン後に<%= link_to 'こちら', new_movie_path %>の投稿サイトへ！</li>
-            <li>YouTube URL欄にペースト</li>
-            <li>リンクの下１１桁を残し、削除<li>
-            <li>ライダー名入力<li>
-            <li>撮影日時を数字のみで 例：20201108(年月日)で入力<li> 
-            <li>撮影場所を可能な範囲で入力<li> 
-            <li>コメント：該当ライディングにかける思い等、入力願います！<li> 
-            <li>”登録する”ボタンをポチっで投稿完了です！<li>
-            <li>投稿者のみ削除が可能です。</li>
-            <li>いいねボタンも一人一回まで。お疲れ様でした！</li>
-          </ol>  
+<div class="main-container">
+  <div class="bg"></div>
+  <div class="sub-container">
+      <h1><i class="fas fa-file-import"></i>動画投稿手順<i class="fas fa-file-export"></i></h1>
+        <div class="item">
+          <h3>ステップ 1.<i class="fas fa-mobile-alt"></i>・<i class="fas fa-laptop"></i>から<i class="fab fa-youtube"></i>(YouTube)への投稿</h3>
+          <h3>ステップ 2."波のりくらべ"への<i class="fab fa-youtube"></i>リンク下11桁の入力</h3>
+        </div> 
+        <div class="item">     
+          <h3>Step 1. <i class="fab fa-youtube"></i>への投稿</h3>
+          <h4>iPhoneの場合</h4>
+        </div>
+        <div class="item">   
+           <ul>
+            <li>1) ライディングを<i class="fas fa-mobile-alt"></i>で撮影</li>
+            <li>2) <i class="fas fa-mobile-alt"></i>で<i class="fab fa-youtube"></i>アプリを開く。下部真ん中の<i class="fas fa-plus-circle"></i>をタップ</li>
+            <li>3) 動画のアップロードをタップ</li>
+            <li>4) 動画をタップ</li>
+            <li>5) 編集（左下の<i class="fas fa-cut"></i>をタップして不要部分をカット）、次へ</li>
+            <li>6) （任意）タイトル、説明等入力後、次へ</li>
+            <li>7) アップロードをタップで終了！</li>
+            <br>
+            <li>*上記は下記サイトを参照しました</li>
+            <li>参照：<%= link_to 'iphoneで撮影した動画をYouTubeへアップロード', 'http://iphone.f-tools.net/QandA/Move-YouTube-upload.html' %>　<li>
+          </ul>
+        </div>
+        <div class="item"> 
+          <h3>Step ２. ”波のりくらべ”への投稿</h3>  
+          <ul>
+            <li>1) iPhoneの<i class="fab fa-youtube"></i>アプリから</li>
+            <li>2) 右下のライブラリをタップ</li>
+            <li>3) 自分の動画をタップ</li>
+            <li>4) 投稿したい動画をタップ</li>
+            <li>5) 動画の下にある共有<i class="fas fa-share"></i>をタップ</li>
+            <li>6)コピーする</li>
+            <li>7) 波のりくらべにログイン後に<%= link_to 'こちら', new_movie_path %>の投稿サイトへ！</li>
+            <li>8) <i class="fab fa-youtube"></i> URL欄にペースト</li>
+            <li>9) リンクの下１１桁を残し、削除</li>
+            <li>10) ライダー名入力</li>
+            <li>11) 撮影日時を数字のみで 例：20201108(年月日)で入力</li> 
+            <li>12) 撮影場所を可能な範囲で入力</li> 
+            <li>13) コメント：該当ライディングにかける思い等、入力願います！</li> 
+            <li>14) ”登録する”ボタンをクリックで投稿完了！</li>
+            <li>15) 投稿者のみ削除が可能です。</li>
+            <li>16) いいね<i class="far fa-heart"></i>は一人一回のみです</li>
+            <li>   以上になります<i class="far fa-hand-peace"></i>          </li>
+          </ul>
+        </div>
   </div>
 </div>
