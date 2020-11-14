@@ -22,13 +22,12 @@
       <% end %>
 
       <div>
-          <%= f.submit "ログイン" , class: "btn btn-primary" %>
+          <%= f.submit "ログイン" , class: "btn btn-success btn-block" %>
           
       </div>
       <br>
       <div>
-          <%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, class: "btn btn-primary", method: :destroy %><br />
-          <br>
+          <%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, class: "btn btn-success btn-block" , method: :destroy %><br />
       </div>
       
       <% end %>
