@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none
+}
+
+html {
+    font-family: "yuGothic", sans-serif;
+    box-sizing: border-box;
+}
+
+.main-contents{
+   display: flex;
+}
+
+.contents{
+  display:flex;
+  overflow: scroll;
+}
+
+
+.main-contents{
+    height: 100vh;
+    width:  100vw;
+    background-color:#ffffff;
+    display:flex;
+    position: relative;
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer {
+  
+  height: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: gray;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+@import "bootstrap";
+
+.img-responsive{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.txt {
+    display: inline-block;
+    text-align: left;
+  }
+
+.container{
+  display: grid;
+}
+
+.item{
+  padding: 30px;
+  margin: 10px;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding:0px 30px 80px;
+ } 
+
+.sub-container{
+    width: 100vw; 
+    height: 100vh;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    margin: auto;
+    top: 2rem;
+    left:8rem;
+    bottom: 0;
+}          
+
+ .bg{
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /*背景画像の設定*/
+    background-image: url("<%= asset_path('tube_left.jpg') %>"); 
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat:no-repeat; 
+    background-position: center center;
+    background-size: 100% 100%;
+
+    /*透過の設定*/
+    opacity: 0.5;
+ }
+.bg_index{
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /*背景画像の設定*/
+    background-image: url("<%= asset_path('AdobeStock_left_tube.jpeg') %>"); 
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat:no-repeat; 
+    background-position: center center;
+    background-size: 100% 100%;
+
+    opacity: 0.5;
+ }
+ 
+ .sub-container_index{
+    width: 100vw; 
+    height: 100vh;
+    color: #000000;
+    font-weight: bold;
+    
+    position: absolute;
+    margin: auto;
+    top: 2rem;
+    left:8rem;
+    bottom: 0;
+    text-align: left;
+}  
+
+.sub-container_index.h4{
+    text-align: center;
+}
+
+hr {
+	  border-top: 5px solid #bbb;
+	  border-bottom: 5px solid #fff;
+	}
